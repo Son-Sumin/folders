@@ -4,22 +4,23 @@
 
 list = [1,2,3,4,5,6,2,3,5,1]
 
-# for i in list :
-#     if i % 2 == 0:
-#         print(f"{i}은 짝수입니다")
-#     elif i % 2 == 1:
-#         print(f"{i}은 홀수입니다")
+for i in list :
+    if i % 2 == 0:
+        print(f"{i}은 짝수입니다")
+    elif i % 2 == 1:
+        print(f"{i}은 홀수입니다")
 
 i = 0
 while i < len(list) :
     if list[i] % 2 == 0:
         print(f"{list[i]}은 짝수입니다")
     elif list[i] % 2 == 1:
-        # print(i)
+         # print(i)
         # print(f"{list[i]}은 홀수입니다")
-        continue #반복문의 continue 뒤 실행 X, break 반복문 끝남
-        # break
-    i+=1
+        # continue #반복문의 continue 뒤 실행 X, break 반복문 끝남
+        break
+        # print("끝")
+        i +=1
 
 
     # match, case
@@ -28,9 +29,9 @@ while i < len(list) :
 for el in list1 :
     match el % 2 :
         case 1:
-            print(f"{i}은 홀수입니다")
+            print(f"{el}은 홀수입니다")
         case 0:
-            print(f"{i}은 짝수입니다")
+            print(f"{el}은 짝수입니다")
 
 
     # 람다 버전3.6부터
@@ -86,7 +87,7 @@ print(sum2)
 #----------------------------
 list1 = [1,2,3,4,5,6,2,3,5,1]
 #4이상으로만(조건) 리스트 만들기
-list0 = []  #리스트를 만들기 위해 리스트를 선어함
+list0 = []  #리스트를 만들기 위해 리스트를 선언함
 for el in list1 :
     # print(el)
     if el >= 4 :

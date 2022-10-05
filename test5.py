@@ -1,46 +1,72 @@
-# 1004 복습 - 제어문
-a = 5
-b = 2
-if a > b :
-   print(f"{a}는 {b}보다 크다")
-elif a < b :
-    print(f"{a}는 {b}보다 작다")
-else: #위 조건이 다 아니면 마지막으로 실행됨
-    print("else")
+#반복문
+# while : 조건이 True인 동안 아래를 실행함
+# for i in list1, range(0,3)
+# i = index
+for i in range(0, 3) :
+    print(i)
 
-#1
-x = {"company" : "카카오"}
-if x.get("company") == "카카오" or x.get("company") == "네이버" :
-    print("대기업 직원")
-else:
-    print("중견기업 직원")
+list1 = ["a", "b", "c"]
+for i in range(0, len(list1)):
+    print(list[i])
 
-#1-1
-x = {"company" : "카카오", "isParttime": True}
-if x.get("company") == "카카오" :
-    if x.get("isParttime") :
-        print("대기업 비정규직원")  
-elif x.get("company") == "네이버" :
-    if x.get("isParttime") :
-        print("대기업 비정규직원")  
-else:
-    print("중견기업 직원")
-#2
-# match case 는 or / and 사용불가
-match x.get("company") :
-    case "카카오" :
-        print("대기업 직원")
-    case "네이버" :
-        print("대기업 직원")
-    case _:
-        print("중견기업 직원")
+for element in list1 :
+    print(element)
 
-#Q. 
-phone = {"name" : "갤럭시", "version": "플립"}
-if phone.get("name") == "갤럭시" :
-    if phone.get("version") == "플립" :
-        print("접히네요")
-    else :
-        print("좋네요")
-else:
-    print("와우")
+index = 0
+while index  < len(list1) :
+    print(list1[index])
+    index+=1
+
+# break continue
+# list1 = [9,4,2,1,6,7,5,4,3,7]
+# 만약에 홀수면 2배, 짝수면 그냥의 리스트를 만드는 중
+# 합이 20이 넘으면 끝
+
+list1 = [9,4,2,1,6,7,5,4,3,7]
+list0 = []
+i = 0
+sum1 = 0
+while i < len(list1) :
+    sum1 += list1[i]
+    # sum1 = sum1 + list1[i]
+    if list1[i]%2 == 1 : 
+        list0.append(list1[i]*2)
+    else:
+        list0.append(list1[i])
+    i+=1
+    if sum1 > 20 : 
+        break
+    #     continue
+    # print("끝")
+print(list0)
+
+
+list1 = ["안", "녕", "하", "세", "요"]
+index = 0
+hi = ""
+while index < len(list1) : 
+    print(hi)
+    hi += list1[index]
+    print(hi) #출력값
+    index+=1
+print(hi) #출력값
+
+
+for i in range(0,len(list1),2) :
+    hi += list1[i]
+print(hi)
+
+
+for element in list1 :
+    hi = hi + element
+print(hi)
+
+
+# num =5
+# for element in num :
+#     print(element)
+
+st = "안녕하세요"
+print(st[0])
+for element in st:
+    print(element)
