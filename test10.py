@@ -42,13 +42,88 @@
 #     print(line)
 # f.close()
 
-f = open("./test.txt", 'a')
-f.write("""
-        asdfasdfasdf""")
-f.close()
+# f = open("./test.txt", 'a')
+# f.write("""
+#         asdfasdfasdf""")
+# f.close()
 
 
 #git add.
 #git commit
 
 #내일 업데이트, class
+# def open(filename, type) :
+        #filename 존재 유무
+        #if write : "w" ; 쓰기모드
+        #elif read : "r" ; 읽기모드
+
+# fr = open("./12345.txt", 'r')
+# lines = fr.readlines()  #["빅데이터", ]
+# for line in lines :
+#         print(lines)
+# fr.close()
+
+# fw = open("./12345.txt", 'w')
+# for line in lines :
+#         if line == "AI" :
+#                 fw.write("ML")
+#         elif line == "py" :
+#                 fw.write("python")
+#         else :
+#                 fw.write(line)
+# fw.close()
+
+
+# fr = open("./8888.txt", 'r', encoding="UTF-8")
+# lines = fr.readlines()  #["빅데이터", ]
+# for line in lines :
+#         print(lines)
+# fr.close()
+
+# fw = open("./8888.txt", 'w', encoding="UTF-8")
+# for line in lines :
+#         line = line.strip()
+#         if line == "한글" :
+#                 fw.write("ML")
+#         elif line == "쓰기" :
+#                 fw.write("글쓰기")
+#         else :
+#                 fw.write(f"{line}")
+#         fw.write("\n")
+
+# fw.close()
+
+
+
+#문제
+# fr = open('./8888.txt', 'r', encoding= "UTF-8")
+# lines = fr.readlines()
+# fr.close()
+
+
+# fw = open('./8888.txt', 'w', encoding="UTF-8")
+# for line in lines : 
+#         text_update = input(f"바꿀 문장(취소는 c):c\n 전 문장: {line}")
+#         if text_update == "c" :
+#                 fw.write(line.strip())
+#         else: 
+#                 fw.write(text_update)
+#         fw.write("\n")
+# fw.close()
+
+# a=input("hi")
+# print(a)
+
+ft = open('./8888.txt', 'r', encoding="UTF-8")
+lines = ft.readlines()
+ft.close()
+
+fw = open('./8888.txt', 'w',encoding= "UTF-8")
+for line in lines:
+        update_text = input(f"전 문장 : {line}\n 바꿀 문장(취소는 c): \t")
+        if update_text == 'c' :
+                fw.write(line.strip())
+        else :
+                fw.write(update_text)
+        fw.write("\n")
+fw.close()

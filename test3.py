@@ -2,6 +2,9 @@
 #뭐는 짝수입니다.
 #뭐는 홀수입니다.
 
+from functools import reduce
+
+
 list = [1,2,3,4,5,6,2,3,5,1]
 
 for i in list :
@@ -26,12 +29,12 @@ while i < len(list) :
     # match, case
     # java switch case
     list1 = [1,2,3,4,5,6,2,3,5,1]
-for el in list1 :
-    match el % 2 :
-        case 1:
-            print(f"{el}은 홀수입니다")
-        case 0:
-            print(f"{el}은 짝수입니다")
+    for el in list1 :
+        match el % 2 :
+            case 1:
+                print(f"{el}은 홀수입니다")
+            case 0:
+                print(f"{el}은 짝수입니다")
 
 
     # 람다 버전3.6부터
@@ -83,7 +86,6 @@ sum2 = reduce(lambda x,y: x+y, list1)
 # 합계 구할때 사용함
 print(sum2)
 
-
 #----------------------------
 list1 = [1,2,3,4,5,6,2,3,5,1]
 #4이상으로만(조건) 리스트 만들기
@@ -94,5 +96,5 @@ for el in list1 :
         list0.append(el)
 print(list0)
 
-list01 = list(filter(lambda x: x >= 4, list1))
-print(list01)
+list2 = list(filter(lambda x: x >= 4, list1))
+print(list2)
