@@ -3,20 +3,20 @@
 #뒷 4자리만 살리고 ***-****-2222
 #02-8888-8888 -> **-****-8888
 
-# def solution(phone_number):
-#     answer = ''
-#     for i in range(0, len(phone_number)):
-#         if i < len(phone_number)-4 :
-#             if phone_number[i] == "-":
-#                 answer += "-"
-#             else: 
-#                 answer += "*"
-#         else :
-#             answer += phone_number[i]
-#     return answer
+def solution(phone_number):
+    answer = ''
+    for i in range(0, len(phone_number)):
+        if i < len(phone_number)-4 :
+            if phone_number[i] == "-":
+                answer += "-"
+            else: 
+                answer += "*"
+        else :
+            answer += phone_number[i]
+    return answer
 
-# print(solution("01033334444"))
-# print(solution("0277778888"))
+print(solution("01033334444"))
+print(solution("0277778888"))
 
 
 # 파일 입출력
@@ -114,16 +114,16 @@
 # a=input("hi")
 # print(a)
 
-ft = open('./8888.txt', 'r', encoding="UTF-8")
-lines = ft.readlines()
-ft.close()
+# ft = open('./8888.txt', 'r', encoding="UTF-8")
+# lines = ft.readlines()
+# ft.close()
 
-fw = open('./8888.txt', 'w',encoding= "UTF-8")
-for line in lines:
-        update_text = input(f"전 문장 : {line}\n 바꿀 문장(취소는 c): \t")
-        if update_text == 'c' :
-                fw.write(line.strip())
-        else :
-                fw.write(update_text)
-        fw.write("\n")
-fw.close()
+# fw = open('./8888.txt', 'w',encoding= "UTF-8")
+# for line in lines:
+#         update_text = input(f"전 문장 : {line}\n 바꿀 문장(취소는 c): \t")
+#         if update_text == 'c' :
+#                 fw.write(line.strip())
+#         else :
+#                 fw.write(update_text)
+#         fw.write("\n")
+# fw.close()

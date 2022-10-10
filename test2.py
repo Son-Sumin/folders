@@ -15,13 +15,13 @@ elif a<b :
 else : 
     # if False, elif False 다 아니면 실행
     str1 = "같다"
-print(f"a>b {str1} ")
+    print(f"a>b {str1} ")
 
 c = [1,2,3]
 if len(c) > 3 :
     print(c[0])
 if len(c) > 2 :
-    print(c[0])
+    print(c[1])
 
 
 # 반복문
@@ -35,12 +35,14 @@ for i in range(0, 5, 2) :
     print(i)
     print (a[i])
 #foreach
-for i in a :
+for i in a :  # 여기서 i는 a의 원소
     print(i)
+
 re = 0
 while re < 5 :
     print(a[re])
     re+=1 # re = re(0) + 1 = 1
+    
 b = [1,2,3,4,5]
 re = 0
 while True :

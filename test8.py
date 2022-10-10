@@ -10,10 +10,6 @@
 #Python은 절차 지향(한 줄씩 읽어나가는 것)
 #Java는 객체 지향(OP)
 
-
-from winreg import HKEY_LOCAL_MACHINE
-
-
 def sum(a,b) : 
     return a + b
 
@@ -76,10 +72,6 @@ isPrimaryNums(9,4,2,11,16)
 #isPrimaryNums(9,4,2,11,16) -> none
 # return 미지정
 #print(isPrimaryNums(9,4,2,11,16)) = none
-
-# print(ooo("hi"))
-# ooo("hi") -> return "hello"
-# a =
 
 
 name = "park"  #전역변수; 함수 밖에서 지정된 변수
