@@ -35,21 +35,21 @@
 # print(solution(5,3))
 
 #3번 답
-def solution(a, b):
-    answer = 0
-    if a<b :
-        # list1 = list(range(a,b+1))
-        # answer = sum(list1)
-        return sum(range(a,b+1))
-    elif a>b :
-        list1 = list(range(b,a+1))
-        answer = sum(list1)
-    else :
-        answer = a
-    return answer
-print(solution(3,5))
-print(solution(3,3))
-print(solution(5,3))
+# def solution(a, b):
+#     answer = 0
+#     if a<b :
+#         # list1 = list(range(a,b+1))
+#         # answer = sum(list1)
+#         return sum(range(a,b+1))
+#     elif a>b :
+#         list1 = list(range(b,a+1))
+#         answer = sum(list1)
+#     else :
+#         answer = a
+#     return answer
+# print(solution(3,5))
+# print(solution(3,3))
+# print(solution(5,3))
 
 
 
@@ -89,23 +89,23 @@ print(solution(5,3))
 # print(solution(5,3))
 
 
-# # 2. 제일 작은 수 제거하기
-# def solution(arr):
-#     answer = []
-#     if len(arr)==1 :
-#         return [-1]
-#     minNumber = 1000000
-#     for a in arr : 
-#         if a < minNumber : 
-#             minNumber = a
-#     arr.remove(minNumber)
-#     return arr
-#        # for a in arr :
-#        #     if minNumber != a :
-#        #         answer.append(a)
-#        # return answer
-# print(solution([10]))
-# print(solution([4,3,2,1]))
+# 2. 제일 작은 수 제거하기
+def solution(arr):
+    answer = []
+    if len(arr)==1 :
+        return [-1]
+    minNumber = 1000000
+    for a in arr : 
+        if a < minNumber : 
+            minNumber = a
+    arr.remove(minNumber)
+    return arr
+    # for a in arr :
+    #     if minNumber != a :
+    #            answer.append(a)
+    # return answer
+print(solution([10]))
+print(solution([4,3,2,1]))
 
 
 
@@ -126,12 +126,12 @@ print(solution(5,3))
 # print(answer)
 
 
-def solution(n):
-    answer = []
-    strA = str(a)
-    for i in range(len(strA)-1,0,-1):
-        answer.append(int(str[i-1]))
-    return answer
+# def solution(n):
+#     answer = []
+#     strA = str(a)
+#     for i in range(len(strA)-1,0,-1):
+#         answer.append(int(str[i-1]))
+#     return answer
 
 # n = 12345
 # answer = list(str(n))
