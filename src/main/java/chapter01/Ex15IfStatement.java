@@ -8,17 +8,32 @@ public class Ex15IfStatement {
 		int a2 = 10;
 		int a3 = 50;
 		
-		char big = ' ';
+//		방법1)	
+//		char big = ' ';
+//		
+//		if(a3 > a1 & a3 > a2) {
+//			big = (char)a3;
+//		} else {
+//			System.out.println("최대값은 " + a3 + "이 아닙니다.");
+//		}
+//		
+//		System.out.println("최대값은 " + a3 + "입니다.");
 		
-		if(a3 > a1 & a3 > a2) {
-			big = (char)a3;
+//		방법2)
+		if(a1 >a2) {
+			if(a3 > a1) {
+				System.out.println("최대값은 " + a3 + "입니다.");
+			} else {
+				System.out.println("최대값은 " + a1 + "입니다.");
+			}
 		} else {
-			System.out.println("최대값은 " + a3 + "이 아닙니다.");
+			if(a3 > a2) {
+				System.out.println("최대값은 " + a3 + "입니다.");
+			} else {
+				System.out.println("최대값은 " + a2 + "입니다.");
+			}
 		}
 		
-		System.out.println("최대값은 " + a3 + "입니다.");
-		
-		//최대값은 50입니다.
 	}
 
 }
