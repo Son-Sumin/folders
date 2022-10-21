@@ -11,9 +11,11 @@ public class Ex30Gugudan2 {
 //		
 //		System.out.print("\n");
 		
-		for (int i = 1; i <= 9; i++) {
-			System.out.print("");
-		}
+//		for (int i = 1; i <= 9; i++) {
+//			System.out.print(i + " x 1 = " + i*1 + "\t");
+//			
+//			for ()
+//		}
 		
 
 	}
