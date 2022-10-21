@@ -13,16 +13,9 @@ public class Prob4 {
 		// 이중 for문
 		for(int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
-			
-			for (int j = 0; j < text.length(); j++) {
-				char q = text.charAt(j);
-				System.out.print(c + q + " ");
-			}
-			
-		}
-
 		
+				System.out.println(c);
+			}
 		scanner.close();
-	}
-
+		}
 }
