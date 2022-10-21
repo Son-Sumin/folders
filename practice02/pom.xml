@@ -8,6 +8,6 @@
 	<artifactId>practice02</artifactId>
 
 	<build>
-		<finalName>practice01</finalName>
+		<finalName>practice02</finalName>
 	</build>
 </project>
