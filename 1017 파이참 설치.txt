@@ -1,0 +1,13 @@
+[pycharm]
+file - setting - No interpreter
+terminal - virtualenv venv
+
+[Powershell 관리자 권한]
+pip install 
+pip install virtualenv
+ExecutionPolicy
+Set-ExecutionPolicy RemoteSigned
+Y
+
+
+
