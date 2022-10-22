@@ -1,6 +1,6 @@
 package chapter01;
 
-public class EX01Variable {
+public class Ex01Variable {
 
 	public static void main(String[] args) {
 		int i = 1000;
