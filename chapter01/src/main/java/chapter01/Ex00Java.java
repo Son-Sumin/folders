@@ -5,12 +5,14 @@ public class Ex00Java {
 	public static void main(String[] args) {
 		/*
 		 * OS 위에서 java script engine이 실행되는 것을 node라고 함
+		 * 
 		 * java : Web Server Application; 주로 back-end; Spring
 		 * javascript(Node.JS) : Web Server Application; back-end; Express.js
 		 * javascript : frond-end를 개발할 수 있는 유일한 언어, Web Client Application
 		 * 				; front-end; vue.js, react, angular.js
 		 * python : Web Server Application; back-end; Django, Flask
 		 * data analysis, ml,dl
+		 * 
 		 * 
 		 * 유지보수가 좋다 -> 확장은 최대로, 수정은 최소로 -> 확장은 열려있고, 수정은 닫혀있는 상태
 		 * 
