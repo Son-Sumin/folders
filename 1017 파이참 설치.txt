@@ -1,9 +1,17 @@
 여러 프로젝트가 한 library에서 이뤄지면 추후 관리 및 배포가 힘들어짐
 그래서 각 프로젝트마다 virtualenv를 만들어 사용함
 
+
+(원래는 되는 방법)
 [pycharm]
 file - setting - No interpreter
 terminal - virtualenv venv
+file - setting - No interpreter - Add local interpreter - new - OK
+
+
+(위 방법 불가한 경우)
+[pycharm]
+file - setting - No interpreter
 
 [Powershell 관리자 권한]
 pip install 
@@ -14,9 +22,8 @@ Set-ExecutionPolicy RemoteSigned
 Y
 
 [pycharm]
-(원래는 되는 방법)
-file - setting - No interpreter - Add local interpreter - new - OK
-
 file - setting - No interpreter - Add local interpreter - existing - OK
 terminal - pip install mysqlclient
+
+pycharm 재실행 후 (venv) 확인
 
