@@ -11,8 +11,11 @@ public class Ex29PrimeDetect {
 		
 		
 		if(isPrime) {
+			
 			System.out.println(num);
 			
+		} else {
+			System.out.println(num + "은 소수가 아닙니다.");
 		}
 
 	}

@@ -16,7 +16,7 @@ public class Ex30Gugudan2 {
 			System.out.print("\n");
 			
 			for (int j = 1; j <= 9; j++) {
-				System.out.print(i + " x " + j + " = " + i*j + "\t");
+				System.out.print(j + " x " + i + " = " + i*j + "\t");
 			}
 		}
 		
