@@ -13,7 +13,12 @@ public class Prob4 {
 		// 이중 for문
 		for(int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
-		
+			
+			for (int j = 0; j < i; j++) {
+				char d  = text.charAt(j);
+				System.out.print(d);
+			}
+				
 				System.out.println(c);
 			}
 		scanner.close();
