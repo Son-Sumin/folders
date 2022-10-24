@@ -9,10 +9,14 @@ public class Ex29PrimeDetect {
 		boolean isPrime = true;
 		
 		if(isPrime) {
+
 			for (int i = 2; i < num; i++) {
 //				 num % i != 0;
 			}
 			num += 1;
+
+			for (int i = 2; i < num; i++);
+			//num % i == 0;
 			
 			System.out.println(num);
 		} else {
