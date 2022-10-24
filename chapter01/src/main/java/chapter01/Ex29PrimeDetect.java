@@ -10,8 +10,7 @@ public class Ex29PrimeDetect {
 		
 		if(isPrime) {
 			for (int i = 2; i < num; i++);
-//			num % i != 0;
-			num += 1;
+			//num % i == 0;
 			
 			System.out.println(num);
 		} else {
