@@ -1,6 +1,7 @@
 package chapter01;
 
 public class Ex13IfStatement {
+// if 기본 형식 확인
 
 	public static void main(String[] args) {
 		char grade = ' ';
