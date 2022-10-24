@@ -17,6 +17,7 @@ public class Ex32Array {
 		System.out.println(a4.length);
 		
 		// 초기화2***
+		// int[자리이름] a5 = 값
 		int[] a5 = new int[5];
 		a5[0] = 0;
 		a5[1] = 1;
