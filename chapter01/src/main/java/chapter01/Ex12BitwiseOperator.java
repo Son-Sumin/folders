@@ -6,15 +6,15 @@ public class Ex12BitwiseOperator {
 		int a = 0x0f;   //0x; 16진수로 표현하겠다, 16진수는 2진법 8자리로 표현
 		int b = 0xf0;
 		
-//		System.out.println(a); // 15
-//		System.out.println(b); // 240
+//		System.out.println(a); // 15   // 0000 1111
+//		System.out.println(b); // 240  // 1111 0000
 		
-		System.out.println(a & b);
-		System.out.println(a | b);
-		System.out.println(a ^ b);
-		System.out.println(~a);
-		System.out.println(a>>3);
-		System.out.println(a<<3);
+		System.out.println(a & b);     // 0000 0000
+		System.out.println(a | b);     // 1111 1111
+		System.out.println(a ^ b);     // 1111 1111
+		System.out.println(~a);        // 1111 0000
+		System.out.println(a>>3);      // 0000 0001
+		System.out.println(a<<3);      // 0111 1000
 		
 		
 /* 우선순위
