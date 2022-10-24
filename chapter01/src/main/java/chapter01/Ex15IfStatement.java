@@ -19,7 +19,7 @@ public class Ex15IfStatement {
 //		
 //		System.out.println("최대값은 " + a3 + "입니다.");
 		
-//		방법2)
+//		방법2) 임의의 수를 지정해도 최대값 산출 가능
 		if(a1 >a2) {
 			if(a3 > a1) {
 				System.out.println("최대값은 " + a3 + "입니다.");

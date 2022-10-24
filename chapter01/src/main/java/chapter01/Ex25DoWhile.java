@@ -9,7 +9,5 @@ public class Ex25DoWhile {
 			System.out.println(i);
 			i++;
 		} while(i < 3);
-
 	}
-
 }

@@ -4,16 +4,13 @@ public class Ex33Array {
 // 잘못된 소스 고치기
 	public static void main(String[] args) {
 		int[] intArray = new int[5];
-
 		intArray[0] = 3;
-
 		intArray[1] = 6;
-
 		intArray[2] = 9;
 
 		int result = 0;
 
-		for (int i = 0; i < intArray.length; i++) {
+		for (int i = 0; i < intArray.length; i++) {    // '<=' -> '<'
 			result = result + intArray[i];
 		}
 		
