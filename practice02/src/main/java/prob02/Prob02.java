@@ -9,14 +9,21 @@ public class Prob02 {
 
 		int[] intArray = new int[ 5 ];
 		double sum = 0;
-
-		/* 키보드에서 배열 크기만큼 입력 받아 배열에 저장하는 코드 */
 		
-		/* 배열에 저장된 정수 값 더하기 */
+		System.out.println("5개의 숫자를 입력하세요.");
+		intArray[0] = scanner.nextInt();
+		intArray[1] = scanner.nextInt();
+		intArray[2] = scanner.nextInt();
+		intArray[3] = scanner.nextInt();
+		intArray[4] = scanner.nextInt();
 		
-		/* 출력 */
+		for(int i = 0; i < intArray.length; i++ ) {
+			sum += intArray[i];
+		}
 		
-		/* 자원정리 */
+		double avg = sum / intArray.length;
+		System.out.println("평균은 " + avg + "입니다.");
+		
 		scanner.close();
 	}
 }
