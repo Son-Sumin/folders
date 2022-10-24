@@ -1,17 +1,21 @@
-package prob03;
-
-public class Prob03 {
-	public static void main(String args[]) {
-		char c[] = { 'T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'p', 'e', 'n', 'c', 'i', 'l', '.' };
-
-//		// 원래 배열 원소 출력
-//		printCharArray(c);
+//package prob03;
 //
-//		// 공백 문자 바꾸기
-//		replaceSpace(c);
+//public class Prob03 {
+//	public static void main(String args[]) {
+//		char[] charArray = { 'T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'p', 'e', 'n', 'c', 'i', 'l', '.' };
 //
-//		// 수정된 배열 원소 출력
-//		printCharArray(c);
-	}
-
-}
+////		// 원래 배열 원소 출력
+////		printCharArray(charArray);
+////
+////		// 공백 문자 바꾸기
+////		replaceSpace(charArray);
+////
+////		// 수정된 배열 원소 출력
+////		printCharArray(charArray);
+////	}
+////	
+////	public static void printCharArray(char[] cs) {
+////		System.out.println(cs);
+////	//공백문자 함수 만들고 공백을 ,로 바꾸기
+////
+////}
