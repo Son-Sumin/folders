@@ -7,13 +7,13 @@ public class Ex29PrimeDetect {
 		
 		int num = 5;		
 		boolean isPrime = true;
-
-		
 		
 		if(isPrime) {
+			for (int i = 2; i < num; i++);
+//			num % i != 0;
+			num += 1;
 			
 			System.out.println(num);
-			
 		} else {
 			System.out.println(num + "은 소수가 아닙니다.");
 		}
