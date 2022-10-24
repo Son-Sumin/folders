@@ -8,25 +8,26 @@ public class Prob03 {
 		printCharArray(charArray);
 
 		// 공백 문자 바꾸기
-		replaceSpace(charArray);	
+		replaceSpace(charArray);
 
 		// 수정된 배열 원소 출력
 		// printCharArray(charArray);
+
 	}
-	
-	public static void replaceSpace(char[] blank) {
-		for (int i = 0; i < blank.length; i++) {
-			char b  = blank[i];
-			if(b == ' ') {
-				b = ',';
-			}
-			System.out.print(b);
+
+	public static void printCharArray(char[] cs) {
+		for (int i = 0; i < cs.length; i++) {
+			System.out.print(cs[i]);
 		}
 		System.out.print("\n");
 	}
-	
-	public static void printCharArray(char[] cs) {
-		System.out.println(cs);
+
+	public static void replaceSpace(char[] blank) {
+		for (int i = 0; i < blank.length; i++) {
+			char b = blank[i];
+			if (b == ' ')
+				b = ',';
+			System.out.print(b);
+		}
 	}
-	
 }

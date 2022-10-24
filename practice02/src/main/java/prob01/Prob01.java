@@ -14,14 +14,14 @@ public class Prob01 {
 
 		System.out.print("금액: ");
 		int price = scanner.nextInt();
-		
-		for(int i = 0; i < MONEYS.length ; i++) {
+
+		for (int i = 0; i < MONEYS.length; i++) {
 			int a = price / MONEYS[i];
 			price = price - (MONEYS[i] * a);
 			System.out.println(MONEYS[i] + "원 : " + a + "개");
-			}
-		
-		scanner.close();
 		}
-	
- 	}
+
+		scanner.close();
+	}
+
+}

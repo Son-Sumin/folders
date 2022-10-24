@@ -8,7 +8,7 @@ public class Ex32Array {
 		
 		// 배열 만드는 방법
 		int a2[] = new int[5];   // 비추방법
-		int[] a3 = new int[5];   // 강추방법
+		int[] a3 = new int[5];   // 강추방법***
 		System.out.println(a3.length);
 		
 		// 초기화1**; 객체는 new가 있어야 하는 원리를 위배히는 것 같지만 초기화2의 과정을 jvm이 해주는 것임
