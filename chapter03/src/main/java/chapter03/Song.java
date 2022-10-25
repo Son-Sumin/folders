@@ -1,3 +1,4 @@
+package chapter03;
 
 public class Song {
 	private String title;
@@ -44,7 +45,15 @@ public class Song {
 	public void setTrack(int track) {
 		this.track = track;
 	}
-	
+	public void show( ) {
+		System.out.println(
+				artist + " " + 
+				title + "( " + 
+				album + ", " + 
+				year + ", " + 
+				track + "번 track, " + 
+				composer + " 작곡 )");
+	}
 	
 	
 }
