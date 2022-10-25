@@ -1,6 +1,7 @@
 package chapter03;
 
 public class Goods {
+	public static int countOfGoods = 0;
 	private String name;
 	private int price;
 	private int countStock;
@@ -12,6 +13,11 @@ public class Goods {
 
 	// 메소드는 public이 많다
 	// this 객체 내부에서 접근하는 메소드
+	
+	public Goods() {
+		countOfGoods++;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -25,6 +31,9 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
+		if(price < 0) {
+			price = 0;    // private 필드를 메소드를 통해 조건을 부여하여 보호할 수 있다.
+		}
 		this.price = price;
 	}
 
@@ -43,7 +52,10 @@ public class Goods {
 	public void setCountSold(int countSold) {
 		this.countSold = countSold;
 	}
-
+	
+//	public void info() {
+//		int i = 10;
+//	}
 
 
 	// @Override
