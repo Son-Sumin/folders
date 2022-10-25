@@ -20,27 +20,59 @@ public class Prob05 {
 
 			while (true) {
 				int answer = scanner.nextInt();
-				for (int i = 1; i <= 100; i++) {
-					System.out.print(i + 1 + ">>");
-					for (int j = 1; j <= 100;) {
-						if (answer == correctNumber) {
-							break;
-						} else if (answer > correctNumber) {
-							System.out.print("더 낮게\n" + j + '-' + answer);
+				if (answer == correctNumber) {
+					break;
+				} else {
+					for (int i = 1; i < 100; i++) {
+						int[] preanswer = new int[100];
+						preanswer[answer-1] = answer;
+						
+						if() {
+							
 						} else {
-							System.out.print("더 높게\n" + answer + "-" + j);
+							
+						}
+						
+						
+						
+						
+						
+						System.out.print(i + 1 + ">>");
+					}
+					
+				}
+						
+							
+						 else if (answer > correctNumber) {
+							if (preanswer[i] <= answer) {
+								System.out.println("더 낮게\n" + preanswer[i] + '-' + answer);
+								break;
+							} else {
+								System.out.println("더 높게\n" + answer + "-" + preanswer[i]);
+								break;
+							}
+
+						} else {
+							if (preanswer[i] <= answer) {
+								System.out.println("더 낮게\n" + preanswer[i] + '-' + answer);
+								break;
+							} else {
+								System.out.println("더 높게\n" + answer + "-" + preanswer[i]);
+								break;
+							}
 						}
 
-						// 새 게임 여부 확인하기
-						System.out.print("다시 하겠습니까(y/n)>>");
-						// String answer = scanner.next();
-						if ("y".equals(answer) == false) {
-							break;
-						}
-					}
+					
+					
+					// 새 게임 여부 확인하기
+//					System.out.print("다시 하겠습니까(y/n)>>");
+//					if ("y".equals(answer) == false) {
+//						break;
+//					}
 				}
 			}
 		}
+		// scanner.close();
 	}
-	// scanner.close();
+
 }
