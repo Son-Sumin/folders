@@ -24,7 +24,6 @@ public class Ex28Continue {
 				i++;
 				continue;
 			}
-			
 			System.out.println(i);
 			i++;
 		}
