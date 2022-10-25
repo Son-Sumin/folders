@@ -16,6 +16,7 @@ public class Ex29PrimeDetect {
 					break;
 				}
 			}
+			
 			if (isPrime) {
 				System.out.println(i);
 			}
