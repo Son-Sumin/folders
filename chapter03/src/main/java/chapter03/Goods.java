@@ -37,11 +37,11 @@ public class Goods {
 		this.price = price;
 	}
 
-	public int getCountStock() {
+	public int getCountStock() {   // 매개변수 없고, 리턴값 있음
 		return countStock;
 	}
 
-	public void setCountStock(int countStock) {
+	public void setCountStock(int countStock) {  // 매개변수 있고, 리턴값 없음
 		this.countStock = countStock;
 	}
 
@@ -64,6 +64,15 @@ public class Goods {
 	public String toString() {
 		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold
 				+ "]";
+	}
+
+	public void showInfo() {   // 매개변수 없고, 리턴값 없음
+		System.out.println("Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold+ "]");
+		
+	}
+
+	public int calcDiscountPrice(double discountRate) {
+		return (int)(price * discountRate);
 	}
 	
 }
