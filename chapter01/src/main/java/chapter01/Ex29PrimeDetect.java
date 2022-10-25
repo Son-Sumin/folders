@@ -13,7 +13,7 @@ public class Ex29PrimeDetect {
 					isPrime = true;
 				} else {
 					isPrime = false;
-					//break;
+					break;
 				}
 			}
 			if (isPrime) {
