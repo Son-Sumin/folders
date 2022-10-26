@@ -24,7 +24,7 @@ public class T10StaticMethod {
 	}
 	
 	static void s2() {
-		System.out.println(T10StaticMethod.m);
+		System.out.println(T10StaticMethod.m); // static 변수 -> static 메소드
 		System.out.println(m);
 	}
 	
