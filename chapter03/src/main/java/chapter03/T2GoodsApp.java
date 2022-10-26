@@ -25,7 +25,7 @@ public class T2GoodsApp {
 		
 		T1Goods g4 = new T1Goods("TV", 10000, 10, 0);
 		g4.showInfo();
-		System.out.println("instance count:" + T1Goods.countOfGoods); 
+		System.out.println("instance count:" + T1Goods.countOfGoods);   // T1Goods가 몇 번 실행됬는지 count
 	}
 
 }

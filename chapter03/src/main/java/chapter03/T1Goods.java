@@ -19,7 +19,9 @@ public class T1Goods {
 	}
 	
 	public T1Goods(String name, int price, int countStock, int countSold) {
-		this();  // refactoring; 중복되는 코드는 피해라
+		this();  
+		// 기본 생성자 T1Goods 호출
+		// refactoring; 중복되는 코드는 피해라
 		
 		this.name = name;
 		this.price = price;
