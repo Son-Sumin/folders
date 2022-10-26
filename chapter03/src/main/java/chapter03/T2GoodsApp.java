@@ -26,6 +26,9 @@ public class T2GoodsApp {
 		T1Goods g4 = new T1Goods("TV", 10000, 10, 0);
 		g4.showInfo();
 		System.out.println("instance count:" + T1Goods.countOfGoods);   // T1Goods가 몇 번 실행됬는지 count
+		
+		System.out.println(g4.toString());
+		System.out.println(g4);  // 위와 같은 결과를 가진다. println은 객체이면 toString을 산출하도록 설정되어 있다.
 	}
 
 }

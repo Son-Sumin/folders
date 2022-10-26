@@ -4,6 +4,10 @@ public class T8Point {
 	private int x;
 	private int y;
 	
+	public T8Point() {
+		
+	}
+	
 	public T8Point(int x, int y) {
 		this.x = x;
 		this.y = y;
