@@ -1,8 +1,8 @@
 package chapter03;
 
-import mypackage.Goods2;
+import mypackage.T3Goods2;
 
-public class DiscountGoods2 extends Goods2 {
+public class T5DiscountGoods2 extends T3Goods2 {
 	private float discountRate = 0.3f;
 	
 	public int getDiscountPrice() {

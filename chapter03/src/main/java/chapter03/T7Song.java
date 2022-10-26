@@ -1,6 +1,6 @@
 package chapter03;
 
-public class Song {
+public class T7Song {
 	private String title;
 	private String artist;
 	private String album;

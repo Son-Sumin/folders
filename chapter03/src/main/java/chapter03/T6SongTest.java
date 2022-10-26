@@ -1,9 +1,9 @@
 package chapter03;
 
-public class SongTest {
+public class T6SongTest {
 
 	public static void main(String[] args) {
-		Song song = new Song();
+		T7Song song = new T7Song();
 
 		song.setTitle("좋은날");
 		song.setArtist("아이유");

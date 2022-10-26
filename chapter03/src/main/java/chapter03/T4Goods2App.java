@@ -1,11 +1,11 @@
 package chapter03;
 
-import mypackage.Goods2;  // ctrl + shift + o ; package 외부 호출
+import mypackage.T3Goods2;  // ctrl + shift + o ; package 외부 호출
 
-public class Goods2App {
+public class T4Goods2App {
 // 접근 지시자 test
 	public static void main(String[] args) {
-		Goods2 g = new Goods2();
+		T3Goods2 g = new T3Goods2();
 		
 		// public은 접근 제한이 없다. (내부, 외부, 자식 다 가능)
 		g.name = "camera";

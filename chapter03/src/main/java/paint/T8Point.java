@@ -1,6 +1,6 @@
 package paint;
 
-public class Point {
+public class T8Point {
 	private int x;
 	private int y;
 	

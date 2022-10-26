@@ -1,17 +1,17 @@
 package paint;
 
-public class Main {
+public class T9Main {
 
 	public static void main(String[] args) {
 		
-		Point pt = new Point();
+		T8Point pt = new T8Point();
 		pt.setX(10);
 		pt.setY(50);
 		
 		drawPoint(pt);
 	}
 	
-	public static void drawPoint(Point pt) {
+	public static void drawPoint(T8Point pt) {
 		pt.show();
 	}
 	

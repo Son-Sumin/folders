@@ -1,6 +1,6 @@
 package chapter03;
 
-public class Goods {
+public class T1Goods {
 	public static int countOfGoods = 0;
 	private String name;
 	private int price;
@@ -14,7 +14,7 @@ public class Goods {
 	// 메소드는 public이 많다
 	// this 객체 내부에서 접근하는 메소드
 	
-	public Goods() {
+	public T1Goods() {
 		countOfGoods++;
 	}
 	
