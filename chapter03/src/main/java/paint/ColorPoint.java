@@ -11,7 +11,7 @@ public class ColorPoint extends T8Point {
 		this.color = color;
 	}
 
-	@Override
+	@Override  // 시그니처가 부모와 동일 (메소드의 갯수 순서 타입)
 	public void show() {
 		// super.show();   부모의 기능 재구현 super. 은 부모의 것을 쓰겠다는 키워드
 		

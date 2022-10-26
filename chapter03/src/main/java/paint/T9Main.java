@@ -15,18 +15,19 @@ public class T9Main {
 		ColorPoint pt2 = new ColorPoint();
 		pt2.setX(100);
 		pt2.setY(200);
-		pt2.setColor("red");
+		((ColorPoint)pt2).setColor("red");  // upcasting; 자식의 것을 부모가 사용
 		
-		drawColorPoint(pt2);
-		
+//		drawColorPoint(pt2);
+		drawPoint(pt2);
+		pt2.show(false);
 	}
 	
 	public static void drawPoint(T8Point pt) {
 		pt.show();
 	}
 	
-	public static void drawColorPoint(ColorPoint pt) {
-		pt.show();
-	}
+//	public static void drawColorPoint(ColorPoint pt) {
+//		pt.show();
+//	}
 	
 }
