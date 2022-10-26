@@ -26,7 +26,7 @@ public class T12ArrayUtil {
 
 		result = new int[d.length];
 		for (int i = 0; i < d.length; i++) {
-			result[i] = (int) d[i];  // 큰 데서 작은 데로 가니까 명시적 캐스팅!
+			result[i] = (int) d[i];  // 작은데 <- 큰 데 명시적 캐스팅!
 		}
 		return result;
 	}

@@ -19,10 +19,13 @@ public class T2GoodsApp {
 		
 		T1Goods g1 = new T1Goods();
 		T1Goods g2 = new T1Goods();
-		T1Goods g3 = new T1Goods();
+		T1Goods g3 = new T1Goods();		
+		System.out.println("instance count:" + T1Goods.countOfGoods); 
 		
-		System.out.println(T1Goods.countOfGoods); 
 		
+		T1Goods g4 = new T1Goods("TV", 10000, 10, 0);
+		g4.showInfo();
+		System.out.println("instance count:" + T1Goods.countOfGoods); 
 	}
 
 }

@@ -8,6 +8,28 @@ public class T7Song {
 	private int year;
 	private int track;
 	
+	public T7Song() {
+		// T7Song 확장하기; 오버로딩
+	}
+	
+	public T7Song(String title, String artist) {
+//		this.title = title;
+//		this.artist = artist;
+//		this.album = "";
+//		this.composer = "";
+		
+		this(title, artist, "", "", 0, 0);  // this; 생성자 안에서 다른 키워드를 사용할 때
+	}
+	
+	public T7Song(String title, String artist, String album, String composer, int year, int track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
+	
 	
 	public String getTitle() {
 		return title;

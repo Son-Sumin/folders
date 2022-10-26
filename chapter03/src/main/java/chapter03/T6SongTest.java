@@ -13,6 +13,12 @@ public class T6SongTest {
 		song.setTrack(3);
 		
 		song.show();
+		
+		T7Song song2 = new T7Song("Love Dive", "IVE", "Jamie Parker 외 3명", "Love Dive", 2022, 1);
+		song2.show();
+		
+		T7Song song3 = new T7Song("사건의 지평선", "윤하");
+		song3.show();
 	}
 
 }

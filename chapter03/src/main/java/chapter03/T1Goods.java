@@ -18,6 +18,15 @@ public class T1Goods {
 		countOfGoods++;
 	}
 	
+	public T1Goods(String name, int price, int countStock, int countSold) {
+		this();  // refactoring; 중복되는 코드는 피해라
+		
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countSold = countSold;
+	}
+	
 	public String getName() {
 		return name;
 	}
