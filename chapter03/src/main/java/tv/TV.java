@@ -67,7 +67,7 @@ package tv;
 //}
 
 
-// 수정
+// 오답풀이
 public class TV {
 	private int channel; // 1 ~ 255 사이 값을 가지게 하고 넘어갈 때는 라운딩 시킬 것
 	private int volume; // 0 ~ 100 사이 값을 가지게 하고 넘어갈 때는 라운딩 시킬 것
@@ -87,11 +87,11 @@ public class TV {
 	}
 	
 	public void power(boolean on) {
-		power = on;   // 이과 같으면 true 의미함
+		power = on;
 	}
 
 	public void channel(int c) {
-		if (power = false) {       // if(!power) {
+		if (!power) {
 			return;
 		}
 		
@@ -105,15 +105,16 @@ public class TV {
 	}
 	
 	public void channel(boolean channelTrue) {
-		if (channelTrue) {
-			this.channel += 1;
+		// channel(channel + (channelTrue ? 1 : -1));
+		if(channelTrue) {
+			channel(channel + 1);
 		} else {
-			this.channel -= 1;
+			channel(channel - 1);
 		}
 	}
 
 	public void volume(int v) {
-		if (power = false) {
+		if (!power) {
 			return;
 		}
 		
@@ -126,11 +127,11 @@ public class TV {
 	}
 	
 	public void volume(boolean volumeTrue) {
-		if (volumeTrue = true) {
-			this.volume += 1;
+		// volume(volume + (volumeTrue ? 1 : -1));
+		if(volumeTrue) {
+			volume(volume + 1);
 		} else {
-			this.volume -= 1;
+			volume(volume - 1);
 		}
 	}
-
 }
