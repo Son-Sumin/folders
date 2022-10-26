@@ -5,7 +5,7 @@ public class T7Song {
 	private String artist;
 	private String album;
 	private String composer;
-	private int year;
+	private int year; 
 	private int track;
 	
 	public T7Song() {

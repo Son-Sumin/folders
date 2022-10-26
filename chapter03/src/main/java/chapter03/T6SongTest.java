@@ -18,7 +18,7 @@ public class T6SongTest {
 		song2.show();
 		
 		T7Song song3 = new T7Song("사건의 지평선", "윤하");
-		song3.show();
+		song3.show(); 
 	}
 
 }

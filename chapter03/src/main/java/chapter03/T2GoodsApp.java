@@ -29,6 +29,6 @@ public class T2GoodsApp {
 		
 		System.out.println(g4.toString());
 		System.out.println(g4);  // 위와 같은 결과를 가진다. println은 객체이면 toString을 산출하도록 설정되어 있다.
-	}
+	} 
 
 }

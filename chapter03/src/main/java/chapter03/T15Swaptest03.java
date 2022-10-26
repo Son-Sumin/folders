@@ -16,7 +16,7 @@ public class T15Swaptest03 {
 	
 	public static void swap(T16IntValue m, T16IntValue n) {
 		int temp = m.value;
-		m.value = n.value;
+		m.value = n.value; 
 		n.value = temp;
 	}
 

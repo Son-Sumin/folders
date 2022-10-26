@@ -8,7 +8,7 @@ public class T9Main {
 		// pt1.setX(10);
 		// pt1.setY(50);
 		
-		drawPoint(pt1);
+		drawPoint(pt1); 
 		//pt1.disappear();
 		pt1.show(false);
 		

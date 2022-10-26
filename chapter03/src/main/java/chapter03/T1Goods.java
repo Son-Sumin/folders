@@ -11,7 +11,7 @@ public class T1Goods {
 	// 메소드를 통해 데이터에 접근하도록 해야함. Goods와 GoodsApp-> set, get 활용
 	// 위 사항은 규격임
 
-	// 메소드는 public이 많다
+	// 메소드는 public이 많다.
 	// this 객체 내부에서 접근하는 메소드
 	
 	public T1Goods() {
@@ -20,7 +20,7 @@ public class T1Goods {
 	
 	public T1Goods(String name, int price, int countStock, int countSold) {
 		this();  
-		// 기본 생성자 T1Goods 호출
+		// 기본 생성자 T1Goods 호출 
 		// this; 메소드 호출을 받는 객체를 의미
 		// this(); 현재 사용중인 객체 그 자체를 의미한다
 		// refactoring; 중복되는 코드는 피해라

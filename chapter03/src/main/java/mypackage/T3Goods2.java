@@ -7,6 +7,6 @@ public class T3Goods2 {
 	private int countSold; // 클래스 [내부]에서만 접근 가능
 
 	public void m() {
-		countSold = 100;
+		countSold = 100; 
 	}
 }

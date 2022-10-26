@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class T11ArrayUtilTest {
 	//항상 test코드부터 짜고 실행해보기
-	// static method 익히기
+	// static method 익히기 
 
 	public static void main(String[] args) {
 		int[] a1 = {0,1,2,3,4};

@@ -3,7 +3,7 @@ package chapter03;
 public class T12ArrayUtil {
 
 	public static double[] intToDouble(int[] a) {
-		double[] result = null;
+		double[] result = null; 
 
 		if (a == null) {
 			return result;

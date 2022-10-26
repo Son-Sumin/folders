@@ -4,7 +4,7 @@ public class T10StaticMethod {
 	int n; // 필드 정보(정의)
 	static int m; // static 변수 선언
 
-	void f1() {
+	void f1() { 
 		System.out.println(n); // 메소드 코드 -> 필드정보
 	}
 
