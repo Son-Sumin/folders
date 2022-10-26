@@ -1,13 +1,77 @@
 package tv;
 
+//// 답안
+//public class TV {
+//	private int channel;    // 1~255 
+//	private int volume;     // 0~100
+//	private boolean power;
+//	
+//	public TV(int channel, int volume, boolean power) {
+//		this.channel = channel;
+//		this.volume = volume;
+//		this.power = power;
+//	}
+//	
+//	public void power(boolean on) {
+//		power = on;
+//	}
+//	
+//	public void channel(boolean up) {
+//		// channel(channel + (up ? 1 : -1));
+//		if(up) {
+//			channel(channel + 1);
+//		} else {
+//			channel(channel - 1);
+//		}
+//	}
+//
+//	public void channel(int channel) {
+//		if(!power) {
+//			return;
+//		}
+//		
+//		if(channel < 1) {
+//			channel = 255;
+//		} else if(channel > 255){
+//			channel = 1;
+//		}
+//		
+//		this.channel = channel;
+//	}
+//	
+//	public void volume(boolean up) {
+//		volume(volume + (up ? 1 : -1));
+//	}
+//
+//	public void volume(int volume) {
+//		if(!power) {
+//			return;
+//		}
+//		
+//		if(volume < 0) {
+//			volume = 100;
+//		} else if(volume > 100){
+//			volume = 0;
+//		}
+//		
+//		this.volume = volume;
+//	}
+//
+//	public void status() {
+//		System.out.println(
+//			"TV[power=" + (power ? "on" : "off") + ", " + 
+//			"channel=" + channel + ", " +
+//			"volume=" + volume + "]");
+//	}
+//	
+//}
+
+
+// 수정
 public class TV {
 	private int channel; // 1 ~ 255 사이 값을 가지게 하고 넘어갈 때는 라운딩 시킬 것
 	private int volume; // 0 ~ 100 사이 값을 가지게 하고 넘어갈 때는 라운딩 시킬 것
 	private boolean power;
-
-	public TV() {
-
-	}
 
 	public TV(int c, int v, boolean p) {
 		this.channel = c;
@@ -16,41 +80,57 @@ public class TV {
 	}
 
 	public void status() {
-		System.out
-				.println("TV[channel= " + channel + ", volume= " + volume + ", power= " + (power ? "On" : "Off") + "]");
+		System.out.println(
+				"TV[channel= " + channel + 
+				", volume= " + volume + 
+				", power= " + (power ? "On" : "Off") + "]");
+	}
+	
+	public void power(boolean on) {
+		power = on;   // 이과 같으면 true 의미함
 	}
 
 	public void channel(int c) {
-		
-		int[] result = new int[255];
-		for (int i = 1; i < result.length; i++) {
-			if (result[i] > 255) {
-				result[i] = result[i] - 255;
-			} else if (result[i] < 1) {
-				result[i] = result[i] + 255;
-			}
-			c = result[i];
+		if (power = false) {       // if(!power) {
+			return;
 		}
+		
+		if(c < 1) {
+			c = 255;
+		} else if(c > 255){
+			c = 1;
+		}
+		
 		this.channel = c;
+	}
+	
+	public void channel(boolean channelTrue) {
+		if (channelTrue) {
+			this.channel += 1;
+		} else {
+			this.channel -= 1;
+		}
 	}
 
 	public void volume(int v) {
-
-		int[] result = new int[101];
-		for (int i = 0; i < result.length; i++) {
-			v = result[i];
-			if (result[i] > 100) {
-				result[i] = result[i] - 101;
-			} else if (result[i] < 0) {
-				result[i] = result[i] + 101;
-			}
-			v = result[i];
+		if (power = false) {
+			return;
+		}
+		
+		if (v < 0) {
+			v = 100;
+		} else if (v > 100) {
+			v = 0;
 		}
 		this.volume = v;
 	}
-
-	public void power(boolean p) {
-		this.power = p;
+	
+	public void volume(boolean volumeTrue) {
+		if (volumeTrue = true) {
+			this.volume += 1;
+		} else {
+			this.volume -= 1;
+		}
 	}
 
 }
