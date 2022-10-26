@@ -9,9 +9,11 @@ public class T14SwapTest02 {
 
 		System.out.println(a + ":" + b);
 
-		int temp = a;
-		a = b;
-		b = temp;
+//		int temp = a;
+//		a = b;
+//		b = temp;
+		
+		swap(a, b);  // 함수에서는 value로 입력하면 바뀌지 않음, reference로 입력해야함
 
 		System.out.println(a + ":" + b);
 
