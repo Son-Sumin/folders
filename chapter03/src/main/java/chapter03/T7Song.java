@@ -10,6 +10,8 @@ public class T7Song {
 	
 	public T7Song() {
 		// T7Song 확장하기; 오버로딩
+		// 모든 클래스에는 반드시 하나 이상의 생성자가 있어야 한다.
+		// 매개변수와 내용이 없는 기본 생성자 추가
 	}
 	
 	public T7Song(String title, String artist) {
