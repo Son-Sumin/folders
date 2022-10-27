@@ -3,6 +3,15 @@ package paint;
 public class ColorPoint extends T8Point {
 	private String color;
 
+	public ColorPoint(int x, int y, String color) {
+		// this.x =x; 는 T8에 x가 private으로 명시되어 호출 불가
+		// this.setX(x); 도 가능
+		//setX(x);
+		//setY(y);
+		super(x, y);
+		this.color = color;
+	}
+
 	public String getColor() {
 		return color;
 	}
