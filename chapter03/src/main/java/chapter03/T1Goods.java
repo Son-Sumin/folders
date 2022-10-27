@@ -3,7 +3,7 @@ package chapter03;
 public class T1Goods {
 	public static int countOfGoods = 0;
 	private String name;
-	private int price;
+	private int price; 
 	private int countStock;
 	private int countSold;
 
