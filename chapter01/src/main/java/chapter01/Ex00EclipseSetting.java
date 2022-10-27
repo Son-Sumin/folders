@@ -12,6 +12,9 @@ public class Ex00EclipseSetting {
 	 * 6. Project Explorer에서 git init > gitignore 확인 > remote 연결
 	 * 
 	 * 
+	 * 
+	 * 
+	 * 
 	 * ** build tool; maven, gradle ;   .java > .class > .jar
 	 * ** eclipse project ;   scr | .settings | .project | .classpath | bin
 	 * ** maven project ; scr | pom.xml | target
