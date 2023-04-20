@@ -18,22 +18,3 @@
 - [python-test0](https://github.com/Son-Sumin/folders/tree/main/python-test0)   
   python 공부 기록 간 재생성 재생성한 [repository](https://github.com/Son-Sumin/python-test)
   <br>  <br>
-  
-* * *
-  <br>
-  
-### …or create a new repository on the command line    
-echo "# folders" >> README.md    
-git init   
-git add README.md    
-git commit -m "first commit"   
-git branch -M main    
-git remote add origin https://github.com/Son-Sumin/folders.git   
-git push -u origin main    
-<br>
-
-### …or push an existing repository from the command line    
-git remote add origin https://github.com/Son-Sumin/folders.git    
-git branch -M main   
-git push -u origin main   
-<br>
